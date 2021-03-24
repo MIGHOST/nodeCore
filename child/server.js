@@ -1,7 +1,7 @@
 const http = require('http');
 const cluster = require('cluster');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const reqHand = (req, res) => {
     console.log(res);
     res.writeHead(200)
